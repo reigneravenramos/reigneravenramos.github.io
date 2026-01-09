@@ -1,0 +1,90 @@
+@use "./theme" as *;
+
+:global(html) {
+  scroll-behavior: smooth;
+}
+
+:global(body) {
+  margin: 0;
+  padding: 0;
+  background-color: $bg-primary;
+  color: $text-primary;
+  font-family: $font-family;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+:global(*) {
+  box-sizing: border-box;
+}
+
+:global(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  font-weight: 700;
+}
+
+:global(p) {
+  margin: 0;
+  line-height: 1.6;
+  color: $text-secondary;
+}
+
+:global(a) {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $accent-primary;
+  }
+}
+
+:global(section) {
+  @include section-padding;
+  position: relative;
+}
+
+:global(.container) {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+
+  @media (max-width: 768px) {
+    padding: 0 $spacing-sm;
+  }
+}
+
+:global(.section-title) {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-xl;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 6px;
+        background: $accent-primary;
+        border-radius: 4px;
+        transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+// Global Animation Helper
+:global(.reveal) {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:global(.reveal.revealed) {
+  opacity: 1;
+  transform: translateY(0);
+}

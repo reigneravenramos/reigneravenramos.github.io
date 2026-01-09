@@ -1,0 +1,78 @@
+// Variables
+:root {
+    --bg-primary: #0d1117;
+    --bg-secondary: #0a0a0a;
+    --bg-tertiary: #141414;
+
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --text-muted: #666666;
+
+    --accent-primary: #016e6e;
+    --accent-secondary: #5d3fd3;
+
+    // For rgba() usage
+    --accent-primary-rgb: 1, 110, 110;
+    --accent-secondary-rgb: 93, 63, 211;
+    --text-primary-rgb: 255, 255, 255;
+
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+:global(body.light-mode) {
+    --bg-primary: #edeade;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #e0e0e0;
+
+    --text-primary: #111111;
+    --text-secondary: #4a4a4a;
+    --text-muted: #666666;
+
+    --accent-primary: #016e6e;
+    --accent-secondary: #5d3fd3;
+
+    --text-primary-rgb: 17, 17, 17;
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+$bg-primary: var(--bg-primary);
+$bg-secondary: var(--bg-secondary);
+$bg-tertiary: var(--bg-tertiary);
+
+$text-primary: var(--text-primary);
+$text-secondary: var(--text-secondary);
+$text-muted: var(--text-muted);
+
+$accent-primary: var(--accent-primary);
+$accent-secondary: var(--accent-secondary);
+$border-color: var(--border-color);
+
+$font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xl: 5rem;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin section-padding {
+    padding: $spacing-xl $spacing-md;
+
+    @media (max-width: 768px) {
+        padding: $spacing-lg $spacing-sm;
+    }
+}
+
+@mixin glass {
+    background: rgba(var(--text-primary-rgb), 0.03); // Adaptive glass alpha
+    backdrop-filter: blur(10px);
+    border: 1px solid $border-color;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
