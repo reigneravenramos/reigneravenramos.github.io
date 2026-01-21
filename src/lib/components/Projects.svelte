@@ -7,35 +7,35 @@
       tech: "Java | Android Studio ",
       description:
         "Is an app designed for users to review and learn more about networking concepts. It offers a comprehensive learning experience by providing reviewers on key topics and quizzes to assess user knowledge.",
-      link: "https://github.com/ReigneRaven/StudyNET",
+      link: "https://github.com/reigneravenramos/StudyNET",
     },
     {
       title: "CDKC: Web-based Medical Services",
       tech: "React | MongoDB | Express.js | Node.js",
       description:
         "A web application that streamlines patient–admin interaction by enabling patients to schedule appointments, access medical records, and order medications, while providing admins with tools to manage appointments, patient records, inventory, and reports efficiently.",
-      link: "https://github.com/ReigneRaven/CCMDKC-Web",
+      link: "https://github.com/reigneravenramos/CDKC-Web",
     },
     {
       title: "CliniQ - Clinic Queueing Management System",
       tech: "React | React Native | Node.js | Express.js | MySQL",
       description:
         "A web and mobile queueing management system designed to revolutionize patient flow, optimize clinical efficiency and enhance the healthcare patient experience.",
-      link: "#",
+      link: "https://gitlab.com/ite_301-314-308_project/cliniq-queueing-management-system",
     },
     {
       title: "PCRealm",
       tech: "TypeScript | Babylon.js",
       description:
         "A web system that helps users build their ideal PC setup within budget constraints.",
-      link: "#",
+      link: "https://github.com/reigneravenramos/PCRealm",
     },
     {
       title: "JeepCity",
       tech: "C# | JavaScript | HTML | CSS",
       description:
         "A website with detailed information about Dagupan City's jeepney routes and fares.",
-      link: "#",
+      link: "https://github.com/reigneravenramos/JeepCity",
     },
   ];
 
@@ -63,7 +63,7 @@
             rel="noopener noreferrer"
             class="visit-link"
           >
-            LINK
+            GITHUB
             <ArrowUpRight size={18} />
           </a>
         </div>

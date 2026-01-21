@@ -12,7 +12,7 @@
 
       <div class="socials">
         <a
-          href="https://github.com/ReigneRaven"
+          href="https://github.com/reigneravenramos"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"

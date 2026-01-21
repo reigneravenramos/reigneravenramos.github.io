@@ -11,7 +11,7 @@
 
       <div class="social-links">
         <a
-          href="https://github.com/ReigneRaven"
+          href="https://github.com/reigneravenramos"
           target="_blank"
           rel="noopener noreferrer"><Github size={24} /></a
         >
@@ -23,7 +23,7 @@
         <a href="mailto:reigneraven.ramos@gmail.com"><Mail size={24} /></a>
       </div>
 
-      <a href="/cv.pdf" target="_blank" class="cta">
+      <a href="/curriculum_vitae.pdf" target="_blank" class="cta">
         Curriculum Vitae
         <ArrowUpRight size={20} />
       </a>

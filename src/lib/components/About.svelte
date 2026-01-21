@@ -3,11 +3,12 @@
     <h2 class="section-title">ABOUT ME</h2>
     <div class="content">
       <p>
-        Hello! I’m Reigne Raven Ramos, an enthusiastic IT graduate from PHINMA
-        University of Pangasinan with a passion for creating engaging and
-        user-focused web experiences. I specialize in designing and developing
-        modern, responsive websites, supported by a strong foundation in HTML,
-        CSS, Java, and JavaScript.
+        Hello! I’m <span class="highlight-name">Reigne Raven</span>, an enthusiastic 
+        <span class="highlight">Information Technology</span> graduate from 
+        <span class="highlight">PHINMA University of Pangasinan</span> with a 
+        passion for creating engaging and user-focused web experiences. 
+        I specialize in designing and developing modern, responsive websites, 
+        supported by a strong foundation in HTML, CSS, Java, and JavaScript.
       </p>
       <p>
         UI/UX design is my core expertise. I design intuitive, accessible, and
@@ -28,6 +29,15 @@
 <style lang="scss">
   @use "../styles/theme" as *;
 
+  .highlight {
+    color: $accent-secondary; // or any color you want
+    font-weight: 600;
+  }
+
+  .highlight-name {
+    color: $accent-primary; // or any color you want
+    font-weight: 600;
+  }
   .content {
     width: 100%;
     background: $bg-secondary;
